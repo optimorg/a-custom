@@ -1,0 +1,43 @@
+.splash-main {
+    background-color: var(--secondary-bg-color);
+}
+
+.top-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.splash-collage {
+    text-align: center;
+}
+
+.hero-card {
+    width: 600px;
+    padding: 20px;
+    font-family: 'Quicksand';
+}
+
+.already {
+    display: flex;
+    align-items: center;
+}
+
+.features {
+    background-color: var(--bg-color);
+    font-family: 'Quicksand';
+}
+
+.card {
+    background-color: var(--secondary-bg-color);
+}
+
+.btn-primary {
+    background-color: var(--highlight-color);
+    border: solid 1px var(--highlight-color);
+}
+
+.btn-secondary {
+    background-color: var(--highlight-color);
+    border: solid 1px var(--highlight-color);
+}
