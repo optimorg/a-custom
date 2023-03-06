@@ -5,3 +5,8 @@
     --text-color: #360031;
     --light-bg-color: #8D7471;
 }
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('./assets/resources/fonts/Quicksand-VariableFont_wght.ttf');
+}
