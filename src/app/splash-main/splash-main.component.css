@@ -5,7 +5,7 @@
 .top-flex {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .splash-collage {
@@ -16,11 +16,17 @@
     width: 600px;
     padding: 20px;
     font-family: 'Quicksand';
+    margin-left: 80px;
 }
 
 .already {
     display: flex;
-    align-items: center;
+    margin-right: 150px;
+}
+
+.intro-buttons {
+    display: flex;
+    margin-left: 120px;
 }
 
 .features {
@@ -35,9 +41,10 @@
 .btn-primary {
     background-color: var(--highlight-color);
     border: solid 1px var(--highlight-color);
+    margin-bottom: 25px;
 }
 
 .btn-secondary {
-    background-color: var(--highlight-color);
+    background-color: darkgray;
     border: solid 1px var(--highlight-color);
 }
