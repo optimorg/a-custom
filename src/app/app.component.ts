@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'a-custom';
+  title = 'Acustom App';
+
+// InProgress Function that hides homepage on login screen
+
+//  pageNumber: number = 1;
+  
+//  function isPageHome(this: any, pageNumber: number) {
+  // if ( this.pageNumber !== 1)
+   // return 0;
+ // }
+
 }

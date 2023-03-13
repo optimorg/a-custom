@@ -21,4 +21,8 @@ import { SplashMainComponent } from './splash-main/splash-main.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+  
+
+ }
