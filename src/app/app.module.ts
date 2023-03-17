@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { LogInFormComponent } from './log-in-form/log-in-form.component';
 import { SplashMainComponent } from './splash-main/splash-main.component';
 import { SignupFormComponent } from './signup-form/signup-form.component';
+import { DesignerDashboardComponent } from './designer-dashboard/designer-dashboard.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { SignupFormComponent } from './signup-form/signup-form.component';
     HeaderComponent,
     LogInFormComponent,
     SplashMainComponent,
-    SignupFormComponent
+    SignupFormComponent,
+    DesignerDashboardComponent
   ],
   imports: [
     BrowserModule,
