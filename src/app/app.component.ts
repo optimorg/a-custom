@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+<<<<<<< HEAD
   title = 'Acustom App';
 
 // InProgress Function that hides homepage on login screen
@@ -17,4 +18,7 @@ export class AppComponent {
    // return 0;
  // }
 
+=======
+  title = 'acustom';
+>>>>>>> origin/login-page
 }

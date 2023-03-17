@@ -1,6 +1,7 @@
 body {
   
     --color-primary: #769FB6;
+<<<<<<< HEAD
     --color-secondary: #86615C;
     --color-secondary-light: #8d7471;
     --color-tertriary: #ffeddf;
@@ -10,6 +11,13 @@ body {
     --playfair: 'Playfair Display';
     --quicksand: 'Quicksand';
     --monteserrat: 'Monteserrat';
+=======
+    --color-primary-dark: #86615C;
+    --color-secondary: #FFEDDF;
+    --color-error: #cc3333;
+    --color-success: #4bb544;
+    --border-radius: 4px;
+>>>>>>> origin/login-page
     
     margin: 0;
     height: 100vh;
@@ -22,14 +30,23 @@ body {
   
   .container {
     width: 400px;
+<<<<<<< HEAD
     height: relative;
+=======
+    height: 650px;
+>>>>>>> origin/login-page
     margin: 1rem;
     padding: 2rem;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
     border-radius: var(--border-radius);
+<<<<<<< HEAD
     background: var(--color-tertriary);
   }
 
+=======
+    background: #ffffff;
+  }
+>>>>>>> origin/login-page
   .container,
   .form__input,
   .form__button {
@@ -40,6 +57,10 @@ body {
   
   .form--hidden {
     display: none;
+<<<<<<< HEAD
+=======
+    
+>>>>>>> origin/login-page
   }
   
   .form > *:first-child {
@@ -48,6 +69,7 @@ body {
   .form > *:last-child {
     margin-bottom: 0;
   }
+<<<<<<< HEAD
 
   .logo_image {
     display: flex;
@@ -55,11 +77,22 @@ body {
     justify-content: center;
   }
 
+=======
+  
+>>>>>>> origin/login-page
   .form__title {
     margin-bottom: 2rem;
     text-align: center;
   }
   
+<<<<<<< HEAD
+=======
+  .logo a img {
+    align-content: center;
+    align-items: center;
+  }
+
+>>>>>>> origin/login-page
   .form__message {
     text-align: center;
     margin-bottom: 1rem;
@@ -119,7 +152,12 @@ body {
   }
   
   .form__button:hover {
+<<<<<<< HEAD
     background: var(--color-primary);
+=======
+    background: var(--color-secondary);
+    color: var(--color-primary);
+>>>>>>> origin/login-page
   }
   .form__button:active {
     transform: scale(0.98);
@@ -137,6 +175,7 @@ body {
   
   .form__link:hover {
     text-decoration: underline;
+<<<<<<< HEAD
   }
 
   .form_link_forgot_pass {
@@ -146,3 +185,6 @@ body {
   .form_link_signup {
     margin: left;
   }
+=======
+  }
+>>>>>>> origin/login-page
