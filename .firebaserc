@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "acustom-e0375": {
+      "hosting": {
+        "a-custom": [
+          "acustom-e0375"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "acustom-e0375"
+  }
+}
