@@ -18,13 +18,15 @@ import { provideMessaging, getMessaging } from '@angular/fire/messaging';
 import { providePerformance, getPerformance } from '@angular/fire/performance';
 import { provideRemoteConfig, getRemoteConfig } from '@angular/fire/remote-config';
 import { provideStorage, getStorage } from '@angular/fire/storage';
+import { CustomerFormComponent } from './customer-form/customer-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     LogInFormComponent,
-    SplashMainComponent
+    SplashMainComponent,
+    CustomerFormComponent
   ],
   imports: [
     BrowserModule,
