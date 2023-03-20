@@ -9,6 +9,7 @@
 body {
     background-color: var(--highlight-color);
 }
+
 .container {
     margin: 0px;
     padding: 5px;
@@ -19,11 +20,13 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-.logo img, {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: none;
+
+.logo img,
+{
+display: block;
+margin-left: auto;
+margin-right: auto;
+padding: none;
 }
 
 .fields-container {
