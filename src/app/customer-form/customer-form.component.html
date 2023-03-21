@@ -1,0 +1,28 @@
+<div>
+    <form #someForm="ngForm" class="example-form">
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="Name" value="Sushi" ngModel name="name">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+            <input type="number" matInput placeholder="Quantity" value="0" ngModel name="quantity">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+            <mat-label>Product</mat-label>
+            <mat-select>
+                <mat-option *ngFor="let product of products" [value]="product.value">
+                    {{product.viewValue}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+            <textarea matInput placeholder="Leave a comment" value="some comments about the food" ngModel
+                name="comments"></textarea>
+        </mat-form-field>
+
+        <button (click)="someForm.reset()" mat-raised-button color="primary">Reset Form</button>
+    </form>
+
+</div>
