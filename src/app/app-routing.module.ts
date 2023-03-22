@@ -9,6 +9,11 @@ const routes: Routes = [
   { path: 'customer-form-component', component: CustomerFormComponent },
   { path: 'splash-main-component', component: SplashMainComponent },
   { path: '', redirectTo: '/splash-main-component', pathMatch: 'full' }
+import { RegistrationFormComponent } from './registration-form/registration-form.component';
+
+const routes: Routes = [
+  { path: 'log-in-form-component', component: LogInFormComponent },
+  { path: 'registration-form-component', component: RegistrationFormComponent }
 ];
 
 @NgModule({

@@ -18,6 +18,7 @@ import { provideMessaging, getMessaging } from '@angular/fire/messaging';
 import { providePerformance, getPerformance } from '@angular/fire/performance';
 import { provideRemoteConfig, getRemoteConfig } from '@angular/fire/remote-config';
 import { provideStorage, getStorage } from '@angular/fire/storage';
+import { RegistrationFormComponent } from './registration-form/registration-form.component';
 import { CustomerFormComponent } from './customer-form/customer-form.component';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -33,6 +34,7 @@ import { MatOptionModule } from '@angular/material/core';
     HeaderComponent,
     LogInFormComponent,
     SplashMainComponent,
+    RegistrationFormComponent,
     CustomerFormComponent
   ],
   imports: [

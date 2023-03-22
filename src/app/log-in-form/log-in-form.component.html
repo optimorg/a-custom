@@ -23,12 +23,18 @@
     </div> <!--end of fields container class-->
     <div class="buttons">
         <button>Sign In</button>
+        <br><br>
         <p>or sign in using</p>
-        <p>Google</p>
-        <p>Facebook</p>
-        <p>LinkedIn</p>
-        <p>Don't have an account.<a href="#">Register</a>
+        <a href="#"><img src="assets\resources\img\google-icon.png"></a>
+        <a href="#"><img src="assets\resources\img\facebook-icon.png"></a>
+        <a href="#"><img src="assets\resources\img\linkedin-icon.png"></a>
+        <p>Don't have an account.
+            <a routerLink="\registration-form-component"
+             routerLinkActive="active" 
+             ariaCurrentWhenActive="page">
+             Register</a>
         </div> <!--end of buttons class-->
         </div> <!-- end of container class -->
+        <router-outlet></router-outlet>
 </body>
 </html>
