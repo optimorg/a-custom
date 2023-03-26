@@ -35,7 +35,6 @@ import { MatOptionModule } from '@angular/material/core';
     LogInFormComponent,
     SplashMainComponent,
     RegistrationFormComponent,
-    CustomerFormComponent
   ],
   imports: [
     BrowserModule,
