@@ -1,42 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login/Sign Up Page</title>
+    <title>Registration Page</title>
 </head>
+
 <body>
     <div class="container">
-        <div class="logo">
-            <img src="assets\resources\img\Acustom.png" width="200px" height="200px">
-        </div> <!-- end of logo image class -->
-        <div class="fields-container">
-          <div class="field">
-            <div class="label">Full Name:</div>
-            <input type="text">
-        </div> <!--end of email address field-->
-        <div class="field">
-            <div class="label">Password:</div>
-            <input type="password">
-        </div> <!--end of password field-->
-        <div class="field">
-            <div class="label">Email Address:</div>
-            <input type="email">
-        </div> <!--end of email address field-->
-        <div class="field">
-            <div class="label">Password:</div>
-            <input type="password">
-        </div> <!--end of password field-->
-    </div> <!--end of fields container class-->
-    <div class="buttons">
-        <button>Sign Up</button>
-        <br><br>
-        <p>or sign up using</p>
-        <a href="#"><img src="assets\resources\img\google-icon.png"></a>
-        <a href="#"><img src="assets\resources\img\facebook-icon.png"></a>
-        <a href="#"><img src="assets\resources\img\linkedin-icon.png"></a>   
+        <p>Registration</p>
+        <p>Are you registering as a customer or a business owner?</p>
+        <input type="checkbox" class="user_customer">Customer
+        <input type="checkbox"class="user_business_owner">Business Owner
+    </div>
+    <div class="container-customer">  <!--[hidden]="*ngIf="(click)="formRequested=user_customer"""-->
+        <div class="form__input-group">
+                <input type="text" class="form__input" autofocus placeholder="Full Name">
+            </div><!--end of name field-->
+            <div class="form__input-group">
+                <input type="email" class="form__input" autofocus placeholder="Email address">
+            </div><!--end of email address field-->
+            <div class="form__input-group">
+                <input type="password" class="form__input" autofocus placeholder="Password">
+            </div><!--end of password field-->
+            <div class="form__input-group">
+                <input type="password" class="form__input" autofocus placeholder="Confirm Password">
+            </div><!--end of confirm password field-->
+        <div class="buttons">
+            <button>Sign Up</button>
+            <br><br>
+            <p>or sign up using</p>
+            <a href="#"><img src="assets\resources\img\google-icon.png"></a>
+            <a href="#"><img src="assets\resources\img\facebook-icon.png"></a>
+            <a href="#"><img src="assets\resources\img\linkedin-icon.png"></a>
         </div> <!--end of buttons class-->
-        </div> <!-- end of container class -->
-        <router-outlet></router-outlet>
+    </div> <!--end of customer container class-->
+    <router-outlet></router-outlet>
 </body>
+</html>

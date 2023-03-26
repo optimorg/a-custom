@@ -19,14 +19,14 @@ import { providePerformance, getPerformance } from '@angular/fire/performance';
 import { provideRemoteConfig, getRemoteConfig } from '@angular/fire/remote-config';
 import { provideStorage, getStorage } from '@angular/fire/storage';
 import { RegistrationFormComponent } from './registration-form/registration-form.component';
-
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     LogInFormComponent,
     SplashMainComponent,
-    RegistrationFormComponent
+    RegistrationFormComponent,
+
   ],
   imports: [
     BrowserModule,
