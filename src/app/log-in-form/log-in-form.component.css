@@ -1,36 +1,39 @@
-body {
-  
-    --color-primary: #769FB6;
-    --color-primary-dark: #86615C;
-    --color-secondary: #FFEDDF;
-    --color-error: #cc3333;
-    --color-success: #4bb544;
-    --border-radius: 4px;
-    
-    margin: 0;
+:root {
+  --bg-color:#769FB6;
+  --secondary-bg-color: #ffeddf;
+  --dark-blue: #003655;
+  --light-blue: #95C0D8;
+  --border-radius: 4px;
+}
+  body {
+  margin: 0;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 18px;
-    background-color: var(--color-primary);
+    background-color: var(--dark-blue);
   }
   
   .container {
     width: 400px;
-    height: 650px;
+    height: relative;
     margin: 1rem;
     padding: 2rem;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
     border-radius: var(--border-radius);
-    background: #ffffff;
+    background: var(--secondary-bg-color);
   }
   .container,
   .form__input,
   .form__button {
     font-family: 'Josefin Sans', sans-serif;
     font-family: 'Quicksand', sans-serif;
-    color: var(--color-primary);
+    color: var(--bg-color);
+  }
+
+  .logo,.form_input,.form_button {
+
   }
   
   .form--hidden {
@@ -50,11 +53,6 @@ body {
     text-align: center;
   }
   
-  .logo a img {
-    align-content: center;
-    align-items: center;
-  }
-
   .form__message {
     text-align: center;
     margin-bottom: 1rem;
@@ -85,8 +83,9 @@ body {
   }
   
   .form__input:focus {
-    border-color: var(--color-secondary);
-    background-color: #ffffff;
+    border-color: var(--dark-blue);
+    background-color: var(--bg-color);
+    color: white;
   }
   
   .form__input--error {
@@ -110,12 +109,15 @@ body {
     border-radius: var(--border-radius);
     outline: none;
     cursor: pointer;
-    background: var(--color-primary); 
+    background: var(--bg-color); 
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    align-items: center;
   }
   
   .form__button:hover {
-    background: var(--color-secondary);
-    color: var(--color-primary);
+    background: var(--dark-blue);
   }
   .form__button:active {
     transform: scale(0.98);
@@ -126,7 +128,7 @@ body {
   }
   
   .form__link {
-    color: var(--color-primary);
+    color: var(--color-secondary);
     text-decoration: none;
     cursor: pointer;
   }
@@ -134,3 +136,7 @@ body {
   .form__link:hover {
     text-decoration: underline;
   }
+  p {
+      font-family: 'Quicksand';
+  }
+  
