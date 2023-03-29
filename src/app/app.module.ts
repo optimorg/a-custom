@@ -8,7 +8,6 @@ import { HeaderComponent } from './header/header.component';
 import { LogInFormComponent } from './log-in-form/log-in-form.component';
 import { SplashMainComponent } from './splash-main/splash-main.component';
 import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
-import { environment } from '../environments/environment';
 import { provideAnalytics, getAnalytics, ScreenTrackingService, UserTrackingService } from '@angular/fire/analytics';
 import { provideAuth, getAuth } from '@angular/fire/auth';
 import { provideDatabase, getDatabase } from '@angular/fire/database';
@@ -26,6 +25,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatOptionModule } from '@angular/material/core';
+import { RegistrationFormComponent } from './registration-form/registration-form.component';
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,9 @@ import { MatOptionModule } from '@angular/material/core';
     HeaderComponent,
     LogInFormComponent,
     SplashMainComponent,
-    CustomerFormComponent
+    CustomerFormComponent,
+    RegistrationFormComponent,
+   
   ],
   imports: [
     BrowserModule,
