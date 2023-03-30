@@ -9,12 +9,8 @@ import { EditOrderComponent } from './edit-order/edit-order.component';
 import { CommonModule } from '@angular/common';
 
 const routes: Routes = [
-  {
-    path: 'log-in-form-component', component: LogInFormComponent,
-    children: [
-      { path: 'registration-form-component', component: RegistrationFormComponent }
-    ]
-  },
+  { path: 'log-in-form-component', component: LogInFormComponent },
+  { path: 'registration-form-component', component: RegistrationFormComponent },
   { path: 'customer-form', component: CustomerFormComponent },
   { path: 'view-orders', component: OrderListComponent },
   { path: 'edit-order/:id', component: EditOrderComponent },

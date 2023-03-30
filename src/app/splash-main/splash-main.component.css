@@ -39,12 +39,12 @@
 }
 
 .btn-primary {
-    background-color: var(--highlight-color);
-    border: solid 1px var(--highlight-color);
+    background-color: var(--bg-color);
+    border: solid 1px var(--bg-color);
     margin-bottom: 25px;
 }
 
 .btn-secondary {
     background-color: darkgray;
-    border: solid 1px var(--highlight-color);
+    border: solid 1px var(--light-blue);
 }
