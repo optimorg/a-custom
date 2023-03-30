@@ -8,6 +8,14 @@
     width: 100%;
 }
 
+.customer-form {
+    text-align: center;
+}
+
+form {
+    display: inline-block;
+}
+
 div {
     text-align: center
 }
