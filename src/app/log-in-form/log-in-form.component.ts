@@ -1,4 +1,6 @@
+import { compileNgModule } from '@angular/compiler';
 import { Component } from '@angular/core';
+import { observeOutsideAngular } from '@angular/fire';
 
 @Component({
   selector: 'app-log-in-form',

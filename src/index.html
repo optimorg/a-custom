@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>ACustom</title>
@@ -10,7 +11,22 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body class="mat-typography">
+
+<body ng-app="Acustom">
+  <div ng-controller="AcustomController">
+
+  </div>
+  <script src="/node_modules/angular/angular.js"></script>
+  <script src="/node_modules/angular-aria/angular-aria.js"></script>
+  <script src="/node_modules/angular-animate/angular-animate.js"></script>
+  <script src="/node_modules/angular-messages/angular-messages.js"></script>
+  <script src="/node_modules/angular-material/angular-material.js"></script>
+  <script>
+    // Include app dependency on ngMaterial
+    angular.module('Acustom', ['ngMaterial', 'ngMessages'])
+      .controller("AcustomController", AcustomController);
+  </script>
   <app-root></app-root>
 </body>
+
 </html>

@@ -1,0 +1,34 @@
+:root {
+    --bg-color: #86615C;
+    --secondary-bg-color: #ffeddf;
+    --highlight-color: #769FB6;
+    --text-color: #360031;
+    --light-bg-color: #8D7471;
+}
+
+body {
+    background-color: var(--highlight-color);
+}
+.container {
+    margin: 0px;
+    padding: 5px;
+    background-color: var(--secondary-bg-color);
+    width: 500px;
+    height: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.logo img, {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: none;
+}
+
+.fields-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: none;
+}
