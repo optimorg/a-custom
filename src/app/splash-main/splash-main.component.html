@@ -14,9 +14,12 @@
         <div class="intro-buttons">
             <div class="already">
                 <p>Already have an account?</p>
-                <a href="#">Click Here</a>
+                <a class="nav-link" 
+                routerLink="/log-in-form-component" 
+                routerLinkActive="active">Click Here</a>
             </div>
-            <button type="button" class="btn btn-primary">Get Started</button>
+            <button type="button" class="btn btn-primary" routerLink="/registration-form-component" 
+            routerLinkActive="active">Get Started</button>
         </div>
     </div>
     <div>
@@ -130,3 +133,4 @@
         </section>
     </div>
 </div>
+<router-outlet></router-outlet>
