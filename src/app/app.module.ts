@@ -32,6 +32,8 @@ import { OrderListComponent } from './order-list/order-list.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
 import { NgxPaginationModule } from 'ngx-pagination';
+import { CustomerLoginFormComponent } from './customer-login-form/customer-login-form.component';
+import { BusinessLoginFormComponent } from './business-login-form/business-login-form.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +44,9 @@ import { NgxPaginationModule } from 'ngx-pagination';
     RegistrationFormComponent,
     CustomerFormComponent,
     EditOrderComponent,
-    OrderListComponent
+    OrderListComponent,
+    CustomerLoginFormComponent,
+    BusinessLoginFormComponent
   ],
   imports: [
     BrowserModule,
