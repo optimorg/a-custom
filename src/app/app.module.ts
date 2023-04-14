@@ -34,6 +34,7 @@ import { ToastrModule } from 'ngx-toastr';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { CustomerLoginFormComponent } from './customer-login-form/customer-login-form.component';
 import { BusinessLoginFormComponent } from './business-login-form/business-login-form.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { BusinessLoginFormComponent } from './business-login-form/business-login
     EditOrderComponent,
     OrderListComponent,
     CustomerLoginFormComponent,
-    BusinessLoginFormComponent
+    BusinessLoginFormComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
