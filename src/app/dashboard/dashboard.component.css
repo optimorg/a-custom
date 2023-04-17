@@ -42,3 +42,8 @@
 .dashboard-nav-bttm {
     margin-block-start: 25px;
 }
+
+nav {
+    background-color: var(--dark-blue);
+    color: var(--text-color);
+}
