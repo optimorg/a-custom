@@ -27,7 +27,6 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatOptionModule } from '@angular/material/core';
-<<<<<<< HEAD
 import { EditOrderComponent } from './edit-order/edit-order.component';
 import { OrderListComponent } from './order-list/order-list.component';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -36,15 +35,7 @@ import { NgxPaginationModule } from 'ngx-pagination';
 import { CustomerLoginFormComponent } from './customer-login-form/customer-login-form.component';
 import { BusinessLoginFormComponent } from './business-login-form/business-login-form.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-=======
-<<<<<<< Updated upstream
-=======
-import { RegistrationFormComponent } from './registration-form/registration-form.component';
-import { environment } from 'src/environments/environment';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { CalendarComponent } from './calendar/calendar.component';
->>>>>>> Stashed changes
->>>>>>> 4783c302c70bb3ee88e7544679d1e5b23fafbd97
 
 @NgModule({
   declarations: [
@@ -52,25 +43,17 @@ import { CalendarComponent } from './calendar/calendar.component';
     HeaderComponent,
     LogInFormComponent,
     SplashMainComponent,
-<<<<<<< HEAD
     RegistrationFormComponent,
     CustomerFormComponent,
     EditOrderComponent,
     OrderListComponent,
     CustomerLoginFormComponent,
     BusinessLoginFormComponent,
-    DashboardComponent
-=======
-<<<<<<< Updated upstream
-    CustomerFormComponent
-=======
+    DashboardComponent,
     CustomerFormComponent,
     RegistrationFormComponent,
     DashboardComponent,
     CalendarComponent,
-   
->>>>>>> Stashed changes
->>>>>>> 4783c302c70bb3ee88e7544679d1e5b23fafbd97
   ],
   imports: [
     BrowserModule,

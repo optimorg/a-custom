@@ -9,12 +9,12 @@
 .dashboard-container {
     background-color: #769FB6;
     width: auto;
-    height: 500px;
+    height: auto;
 }
 .dashboard-nav-container {
     background-color: #003655;
     width: 250px;
-    height: 500px;
+    height: auto;
 }
 .acustom_logo {
     display: block;
