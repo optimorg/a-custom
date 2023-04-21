@@ -32,6 +32,9 @@ import { OrderListComponent } from './order-list/order-list.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
 import { NgxPaginationModule } from 'ngx-pagination';
+import { UploadFormComponent } from './upload-form/upload-form.component';
+import { UploadListComponent } from './upload-list/upload-list.component';
+import { UploadDetailsComponent } from './upload-details/upload-details.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +45,10 @@ import { NgxPaginationModule } from 'ngx-pagination';
     RegistrationFormComponent,
     CustomerFormComponent,
     EditOrderComponent,
-    OrderListComponent
+    OrderListComponent,
+    UploadFormComponent,
+    UploadListComponent,
+    UploadDetailsComponent
   ],
   imports: [
     BrowserModule,
