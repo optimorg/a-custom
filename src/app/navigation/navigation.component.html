@@ -1,1 +1,19 @@
-<p>side-nav works!</p>
+//Acustom logo that links back to homepage
+<div class="Acustom_logo">
+        <img src=""/>
+</div>
+//Dashboard left side navigation
+<div class="nav_wrapper">
+        <ul class="nav">
+                <a href=".\src\index.html"></a>
+                    <div class="acustom_logo">
+                        <img src=".\src\assets\resources\img\Acustom_logo.png"/>
+                    </div>
+                <li routerLinkActive="active" *ngFor="let dashTab of dashTabs" class="{{dashTab.class}} nav-item">
+                    <a class="nav-link" [routerLink]="[dashTab.path]">
+                        <i class="material-icons">{{dashTab.icon}}</i>
+                        <p>{{dashTab.title}}</p>
+                    </a>
+                </li>
+            </ul>
+</div>

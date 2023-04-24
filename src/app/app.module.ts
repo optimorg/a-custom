@@ -36,6 +36,8 @@ import { CustomerLoginFormComponent } from './customer-login-form/customer-login
 import { BusinessLoginFormComponent } from './business-login-form/business-login-form.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CalendarComponent } from './calendar/calendar.component';
+import { MatNativeDateModule } from '@angular/material/core';
+import { NavigationComponent } from './navigation/navigation.component';
 
 @NgModule({
   declarations: [
@@ -54,6 +56,7 @@ import { CalendarComponent } from './calendar/calendar.component';
     RegistrationFormComponent,
     DashboardComponent,
     CalendarComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
@@ -84,6 +87,6 @@ import { CalendarComponent } from './calendar/calendar.component';
   providers: [
     ScreenTrackingService, UserTrackingService
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent,CalendarComponent]
 })
 export class AppModule { }
