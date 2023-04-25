@@ -6,44 +6,7 @@
     --light-blue: #95C0D8;
     --border-radius: 4px;
 }
-.dashboard-container {
+body {
     background-color: #769FB6;
-    width: auto;
-    height: auto;
-}
-.dashboard-nav-container {
-    background-color: #003655;
-    width: 250px;
-    height: auto;
-}
-.acustom_logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 10px;
-    color: var(lightblue);
-}
-.dashboard-nav-links {
-    color: var(--light-blue);
-    text-align: center;
-}
-.dashboard-nav-top {
-    padding: 15px;
-}
-.calendar {
-    width: 200px;
-    height:200px;
-    background-color: white;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-.dashboard-nav-bttm {
-    margin-block-start: 25px;
-}
-
-nav {
-    background-color: var(--dark-blue);
-    color: var(--text-color);
+   
 }

@@ -11,6 +11,8 @@ export const ROUTES: RouteInfo[] = [
   { path: '/user-profile', title: 'User Profile',  icon:'person', class: '' },
   { path: '/availability', title: 'Availability',  icon:'library_books', class: '' },
   { path: '/notifications', title: 'Notifications',  icon:'notifications', class: '' },
+  { path: '/settings', title: 'Settings',  icon:'settings', class: '' },
+  { path: '/logout', title: 'LogOut',  icon:'unarchive', class: '' }
 ];
 @Component({
   selector: 'app-navigation',
