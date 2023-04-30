@@ -6,7 +6,7 @@ import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { AngularFireStorageModule } from '@angular/fire/compat/storage';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { environment } from '../environments/environment';
+import { environment } from './environments/environment';
 import { HeaderComponent } from './header/header.component';
 import { LogInFormComponent } from './log-in-form/log-in-form.component';
 import { SplashMainComponent } from './splash-main/splash-main.component';
@@ -35,6 +35,11 @@ import { OrderListComponent } from './order-list/order-list.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
 import { NgxPaginationModule } from 'ngx-pagination';
+import { CustomerLoginFormComponent } from './customer-login-form/customer-login-form.component';
+import { BusinessLoginFormComponent } from './business-login-form/business-login-form.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { CalendarComponent } from './calendar/calendar.component';
+import { NavigationComponent } from './navigation/navigation.component';
 import { UploadFormComponent } from './upload-form/upload-form.component';
 import { UploadListComponent } from './upload-list/upload-list.component';
 import { UploadDetailsComponent } from './upload-details/upload-details.component';
@@ -49,6 +54,14 @@ import { UploadDetailsComponent } from './upload-details/upload-details.componen
     CustomerFormComponent,
     EditOrderComponent,
     OrderListComponent,
+    CustomerLoginFormComponent,
+    BusinessLoginFormComponent,
+    DashboardComponent,
+    CustomerFormComponent,
+    RegistrationFormComponent,
+    DashboardComponent,
+    CalendarComponent,
+    NavigationComponent,
     UploadFormComponent,
     UploadListComponent,
     UploadDetailsComponent,
@@ -85,7 +98,7 @@ import { UploadDetailsComponent } from './upload-details/upload-details.componen
   providers: [
     ScreenTrackingService, UserTrackingService
   ],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent,CalendarComponent],
   entryComponents: [CustomerFormComponent]
 })
 export class AppModule { }

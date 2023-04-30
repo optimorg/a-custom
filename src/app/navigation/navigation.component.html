@@ -1,0 +1,32 @@
+<!--Dashboard left side navigation-->
+<div class="nav_wrapper">
+        <ul class="nav">
+                <li routerLinkActive="active" *ngFor="let dashTab of dashTabs" class="{{dashTab.class}} nav-item">
+                    <a class="nav-link" [routerLink]="[dashTab.path]">
+                        <i class="material-icons">{{dashTab.icon}}</i>
+                        <p>{{dashTab.title}}</p>
+                    </a>
+                </li>
+            </ul>
+</div>
+<style>
+    :root {
+    --bg-color:#769FB6;
+    --secondary-bg-color: #ffeddf;
+    --dark-blue: #003655;
+    --text-color:#769FB6;;
+    --light-blue: #95C0D8;
+    --border-radius: 4px;
+}
+    .nav_wrapper {
+        background-color: var(--dark-blue);
+        color: var(--light-blue);
+        width: 120px;
+        float: left;
+}
+    .nav {
+        display: block;
+        margin-left: auto;
+        margin-right:auto;
+}
+</style>
