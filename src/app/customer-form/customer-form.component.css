@@ -12,6 +12,24 @@
     text-align: center;
 }
 
+.form-container{
+    height: 100%;
+    font-family: Quicksand;
+    background-color: #ffeddf;
+    opacity: 0.8;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #ffeddf 10px ), repeating-linear-gradient( #769FB655, #769FB6 );
+}
+
+.close-button{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+h2{
+    color: var(--text-color);
+}
+
 form {
     display: inline-block;
 }

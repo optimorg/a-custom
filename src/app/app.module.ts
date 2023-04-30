@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AngularFireModule } from '@angular/fire/compat'
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
+import { AngularFireStorageModule } from '@angular/fire/compat/storage';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { environment } from './environments/environment';
@@ -27,6 +29,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatOptionModule } from '@angular/material/core';
+import { MatDialogModule } from '@angular/material/dialog';
 import { EditOrderComponent } from './edit-order/edit-order.component';
 import { OrderListComponent } from './order-list/order-list.component';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -37,6 +40,9 @@ import { BusinessLoginFormComponent } from './business-login-form/business-login
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CalendarComponent } from './calendar/calendar.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { UploadFormComponent } from './upload-form/upload-form.component';
+import { UploadListComponent } from './upload-list/upload-list.component';
+import { UploadDetailsComponent } from './upload-details/upload-details.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +61,10 @@ import { NavigationComponent } from './navigation/navigation.component';
     RegistrationFormComponent,
     DashboardComponent,
     CalendarComponent,
-    NavigationComponent
+    NavigationComponent,
+    UploadFormComponent,
+    UploadListComponent,
+    UploadDetailsComponent,
   ],
   imports: [
     BrowserModule,
@@ -68,7 +77,10 @@ import { NavigationComponent } from './navigation/navigation.component';
     MatInputModule,
     MatSelectModule,
     MatOptionModule,
+    MatDialogModule,
     NgxPaginationModule,
+    AngularFireDatabaseModule,
+    AngularFireStorageModule,
     ToastrModule.forRoot(),
     AngularFireModule.initializeApp(environment.firebase),
     provideFirebaseApp(() => initializeApp(environment.firebase)),
@@ -86,6 +98,7 @@ import { NavigationComponent } from './navigation/navigation.component';
   providers: [
     ScreenTrackingService, UserTrackingService
   ],
-  bootstrap: [AppComponent,CalendarComponent]
+  bootstrap: [AppComponent,CalendarComponent],
+  entryComponents: [CustomerFormComponent]
 })
 export class AppModule { }
