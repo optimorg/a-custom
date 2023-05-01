@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { FileUploadService } from 'src/app/services/file-upload.service';
-import { FileUpload } from 'src/app/models/file-upload.model';
+import { FileUpload } from 'app/models/file-upload.model';
+import { FileUploadService } from 'app/services/file-upload.service';
 
 @Component({
   selector: 'app-upload-details',

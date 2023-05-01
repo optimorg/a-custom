@@ -40,12 +40,12 @@ import { BusinessLoginFormComponent } from './business-login-form/business-login
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CalendarComponent } from './calendar/calendar.component';
 import { NavigationComponent } from './navigation/navigation.component';
-import { UploadFormComponent } from './upload-form/upload-form.component';
-import { UploadListComponent } from './upload-list/upload-list.component';
-import { UploadDetailsComponent } from './upload-details/upload-details.component';
 import { DesignerListComponent } from './designer-list/designer-list.component';
 import { DesignerCardComponent } from './designer-card/designer-card.component';
 import { DesignerDashboardComponent } from './designer-dashboard/designer-dashboard.component';
+import { UploadFormComponent } from './upload-form/upload-form.component';
+import { UploadListComponent } from './upload-list/upload-list.component';
+import { UploadDetailsComponent } from './upload-details/upload-details.component';
 
 @NgModule({
   declarations: [
