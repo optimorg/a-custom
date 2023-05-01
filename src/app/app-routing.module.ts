@@ -7,6 +7,8 @@ import { RegistrationFormComponent } from './registration-form/registration-form
 import { OrderListComponent } from './order-list/order-list.component';
 import { EditOrderComponent } from './edit-order/edit-order.component';
 import { CommonModule } from '@angular/common';
+import { DesignerListComponent } from './designer-list/designer-list.component';
+import { DesignerDashboardComponent } from './designer-dashboard/designer-dashboard.component';
 
 const routes: Routes = [
   { path: 'log-in-form-component', component: LogInFormComponent },
@@ -14,6 +16,8 @@ const routes: Routes = [
   { path: 'customer-form', component: CustomerFormComponent },
   { path: 'view-orders', component: OrderListComponent },
   { path: 'edit-order/:id', component: EditOrderComponent },
+  { path: 'designer-list', component: DesignerListComponent },
+  { path: 'designer-dashboard', component: DesignerDashboardComponent },
   { path: 'splash-main-component', component: SplashMainComponent },
   { path: '', redirectTo: '/splash-main-component', pathMatch: 'full' },
 ]

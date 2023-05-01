@@ -23,6 +23,7 @@
                         <th scope="col">Quantity</th>
                         <th scope="col">Product</th>
                         <th class="text-center" scope="col">Comment</th>
+                        <th scope="col">Image</th>
                         <th></th>
                     </tr>
                 </thead>
@@ -37,6 +38,7 @@
                 <td>{{ order.quantity }}</td>
                 <td>{{ order.product }}</td>
                 <td>{{ order.comment }}</td>
+                <td></td>
                 <td class="text-center action-block">
                     <span class="btn btn-outline-danger btn-sm" (click)="deleteOrder(order)">Delete</span>
                 </td>

@@ -15,24 +15,8 @@ export class AppComponent {
   items: Observable<any[]>;
   constructor(
     firestore: AngularFirestore,
-    public dialog: MatDialog
     ) {
     this.items = firestore.collection('items').valueChanges();
   }
-  openOrderDialog(){
-    const dialogConfig = new MatDialogConfig();
-    
-    dialogConfig.disableClose = false;
-    dialogConfig.autoFocus = true;
 
-    this.dialog.open(CustomerFormComponent, dialogConfig)
-  }
-  openOrderListDialog(){
-    const dialogConfig = new MatDialogConfig();
-
-    dialogConfig.disableClose = false;
-    dialogConfig.autoFocus = true;
-
-    this.dialog.open(OrderListComponent, dialogConfig)
-  }
 }

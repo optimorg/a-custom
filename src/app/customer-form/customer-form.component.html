@@ -23,21 +23,25 @@
                     <mat-option value="Black and Gold">Black And Gold</mat-option>
                     <mat-option value="Yellow and Pink">Yellow and Pink</mat-option>
                 </mat-select>
-                <!-- <mat-option *ngFor="let product of products" formControlName="product" [value]="product.viewValue">
-                {{product.viewValue}}
-            </mat-option> -->
             </mat-form-field>
-
+            <div class="container" style="width:450px">
+                <div class="my-3">
+                  <app-upload-form></app-upload-form>
+                </div>
+              
+                <div class="my-2">
+                  <app-upload-list></app-upload-list>
+                </div>
+              </div>
+              <br>
             <mat-form-field class="example-full-width">
                 <textarea matInput placeholder="Leave a comment" formControlName="comment" value="some comments"
                     name="comments"></textarea>
             </mat-form-field>
-            <app-upload-form></app-upload-form>
-
-            <button type="button" class="btn btn-secondary gap-right" (click)="ResetForm()">
+            <button type="button" class="btn btn-danger gap-right" (click)="ResetForm()">
                 Reset
             </button>
-            <button type="submit" class="btn btn-success" [disabled]="!customerOrderForm.valid">
+            <button mat-dialog-close type="submit" class="btn btn-primary" [disabled]="!customerOrderForm.valid">
                 Add Order
             </button>
         </form>

@@ -38,6 +38,9 @@ import { NgxPaginationModule } from 'ngx-pagination';
 import { UploadFormComponent } from './upload-form/upload-form.component';
 import { UploadListComponent } from './upload-list/upload-list.component';
 import { UploadDetailsComponent } from './upload-details/upload-details.component';
+import { DesignerListComponent } from './designer-list/designer-list.component';
+import { DesignerCardComponent } from './designer-card/designer-card.component';
+import { DesignerDashboardComponent } from './designer-dashboard/designer-dashboard.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +55,9 @@ import { UploadDetailsComponent } from './upload-details/upload-details.componen
     UploadFormComponent,
     UploadListComponent,
     UploadDetailsComponent,
+    DesignerListComponent,
+    DesignerCardComponent,
+    DesignerDashboardComponent,
   ],
   imports: [
     BrowserModule,

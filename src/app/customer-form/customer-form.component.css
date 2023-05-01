@@ -17,7 +17,7 @@
     font-family: Quicksand;
     background-color: #ffeddf;
     opacity: 0.8;
-    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #ffeddf 10px ), repeating-linear-gradient( #769FB655, #769FB6 );
+    background-image: radial-gradient(circle, #ffeddf, #dadbc5, #afcbb9, #88b7b8, #769fb6);
 }
 
 .close-button{
@@ -27,7 +27,7 @@
 }
 
 h2{
-    color: var(--text-color);
+    color: var(--dark-blue);
 }
 
 form {
