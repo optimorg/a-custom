@@ -10,13 +10,13 @@ import { EditOrderComponent } from './edit-order/edit-order.component';
 import { CommonModule } from '@angular/common';
 import { DesignerListComponent } from './designer-list/designer-list.component';
 import { DesignerDashboardComponent } from './designer-dashboard/designer-dashboard.component';
+import { AuthGuard } from './shared/guard/auth.guard';
 
 const routes: Routes = [
   { path: 'dashboard-component', component: DashboardComponent },
   { path: 'registration-form-component', component: RegistrationFormComponent },
   { path: 'log-in-form-component', component: LogInFormComponent },
-  { path: 'registration-form-component', component: RegistrationFormComponent },
-  { path:'dashboard', component: DashboardComponent },
+  { path:'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
   { path: 'customer-form', component: CustomerFormComponent },
   { path: 'view-orders', component: OrderListComponent },
   { path: 'edit-order/:id', component: EditOrderComponent },

@@ -30,13 +30,14 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatOptionModule } from '@angular/material/core';
 import { MatDialogModule } from '@angular/material/dialog';
+import {MatCardModule} from '@angular/material/card'
 import { EditOrderComponent } from './edit-order/edit-order.component';
 import { OrderListComponent } from './order-list/order-list.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
 import { NgxPaginationModule } from 'ngx-pagination';
-import { CustomerLoginFormComponent } from './customer-login-form/customer-login-form.component';
-import { BusinessLoginFormComponent } from './business-login-form/business-login-form.component';
+import { CustomerRegisterFormComponent } from './customer-register-form/customer-register-form.component';
+import { BusinessRegisterFormComponent } from './business-register-form/business-register-form.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CalendarComponent } from './calendar/calendar.component';
 import { NavigationComponent } from './navigation/navigation.component';
@@ -46,6 +47,8 @@ import { DesignerDashboardComponent } from './designer-dashboard/designer-dashbo
 import { UploadFormComponent } from './upload-form/upload-form.component';
 import { UploadListComponent } from './upload-list/upload-list.component';
 import { UploadDetailsComponent } from './upload-details/upload-details.component';
+import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+import { AuthService } from './services/auth.service';
 
 @NgModule({
   declarations: [
@@ -57,8 +60,8 @@ import { UploadDetailsComponent } from './upload-details/upload-details.componen
     CustomerFormComponent,
     EditOrderComponent,
     OrderListComponent,
-    CustomerLoginFormComponent,
-    BusinessLoginFormComponent,
+    CustomerRegisterFormComponent,
+    BusinessRegisterFormComponent,
     DashboardComponent,
     CustomerFormComponent,
     RegistrationFormComponent,
@@ -76,6 +79,7 @@ import { UploadDetailsComponent } from './upload-details/upload-details.componen
     BrowserModule,
     AppRoutingModule,
     AngularFirestoreModule,
+    AngularFireAuthModule,
     FormsModule,
     ReactiveFormsModule,
     MatFormFieldModule,
@@ -84,6 +88,7 @@ import { UploadDetailsComponent } from './upload-details/upload-details.componen
     MatSelectModule,
     MatOptionModule,
     MatDialogModule,
+    MatCardModule,
     NgxPaginationModule,
     AngularFireDatabaseModule,
     AngularFireStorageModule,
@@ -102,7 +107,7 @@ import { UploadDetailsComponent } from './upload-details/upload-details.componen
     BrowserAnimationsModule
   ],
   providers: [
-    ScreenTrackingService, UserTrackingService
+    ScreenTrackingService, UserTrackingService, AuthService
   ],
   bootstrap: [AppComponent,CalendarComponent],
   entryComponents: [CustomerFormComponent]

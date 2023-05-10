@@ -11,19 +11,27 @@
 <body>
     <div class="container">
         <h1 class="form__title">Login</h1>
-        <div class="form__input-group">
-            <input type="email" class="form__input" autofocus placeholder="Email address">
+        <div class="formGroup">
+            <input type="email" class="formControl" placeholder="Email address" #userEmail required>
         </div> <!--end of email address field-->
-        <div class="form__input-group">
-            <input type="password" class="form__input" autofocus placeholder="Password">
+        <div class="formGroup">
+            <input type="password" class="formControl" autofocus placeholder="Password" #userPassword required>
         </div> <!--end of password field-->
+        <div class="formGroup">
+            <input type="button" class="btn btnPrimary" value="Log in" (click)="authService.SignIn(userEmail.value, userPassword.value)">
+        </div>
+        <div class="formGroup">
+            <span class="or"><span class="orInner">Or</span> </span>
+        </div>
+        <div class="formGroup">
+            <button type="button" class="btn googleBtn" (click)="authService.GoogleAuth()">
+                <i class="fab fa-google-plus-g"></i>
+                Log in with Google
+            </button>
+        </div>
+
+
         <div class="buttons">
-            <button class="form__button">Continue</button>
-            <br><br>
-            <p>or sign in using</p>
-            <a href="#"><img src="assets\resources\img\google-icon.png"></a>
-            <a href="#"><img src="assets\resources\img\facebook-icon.png"></a>
-            <a href="#"><img src="assets\resources\img\linkedin-icon.png"></a>
             <p>Don't have an account.</p>
             <a routerLink="/registration-form-component" routerLinkActive="active" ariaCurrentWhenActive="page">
                 Register</a>
