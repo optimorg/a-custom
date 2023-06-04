@@ -39,7 +39,7 @@ export class AuthService {
         this.SetUserData(result.user);
         this.afAuth.authState.subscribe((user) => {
           if (user) {
-            this.router.navigate(['dashboard-component']);
+            this.router.navigate(['dashboard']);
           }
         });
       })
@@ -52,15 +52,14 @@ export class AuthService {
     return this.afAuth
       .createUserWithEmailAndPassword(email, password)
       .then((result) => {
-        /* Call the SendVerificaitonMail() function when new user sign 
-        up and returns promise */
-        this.router.navigate(['log-in-form-component'])
         this.SetUserData(result.user);
+        this.router.navigate(['log-in-form-component']);
       })
       .catch((error) => {
         window.alert(error.message);
       });
   }
+
   // Send email verfificaiton when new user sign up
   // SendVerificationMail() {
   //   return this.afAuth.currentUser
@@ -69,7 +68,7 @@ export class AuthService {
   //       this.router.navigate(['verify-email-address']);
   //     });
   // }
-  // Reset Forggot password
+  // // Reset Forggot password
   // ForgotPassword(passwordResetEmail: string) {
   //   return this.afAuth
   //     .sendPasswordResetEmail(passwordResetEmail)
@@ -113,7 +112,7 @@ export class AuthService {
     const userData: User = {
       uid: user.uid,
       email: user.email,
-      displayName: user.displayName,
+      displayName: user.displayName
     };
     return userRef.set(userData, {
       merge: true,

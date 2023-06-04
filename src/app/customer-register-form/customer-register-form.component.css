@@ -15,7 +15,6 @@
       color: var(--bg-color);
     }
   
-  
     .form--hidden {
       display: none;
       
@@ -33,24 +32,11 @@
       text-align: center;
     }
     
-    .form__message {
-      text-align: center;
-      margin-bottom: 1rem;
-    }
-    
-    .form__message--success {
-      color: var(--color-success);
-    }
-    
-    .form__message--error {
-      color: var(--color-error);
-    }
-    
     .form__input-group {
       margin-bottom: 1rem;
     }
     
-    .form__input {
+    .formControl {
       display: block;
       width: 100%;
       padding: 0.75rem;
@@ -62,7 +48,7 @@
       transition: background 0.2s, border-color 0.2s;
     }
     
-    .form__input:focus {
+    .formControl:focus {
       border-color: var(--dark-blue);
       background-color: var(--bg-color);
       color: white;
@@ -118,4 +104,13 @@
     }
     p {
         font-family: 'Quicksand';
+    }
+
+    .google-container{
+      display: flex;
+      align-items: center;
+    }
+
+    h2{
+      text-align: center;
     }

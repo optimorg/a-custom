@@ -11,30 +11,31 @@
 <body>
     <div class="container">
         <h1 class="form__title">Login</h1>
+        <div class="formGroup form__input">
+            <input type="email" class="formControl" autofocus placeholder="Email address" #userEmail required>
+        </div> 
         <div class="formGroup">
-            <input type="email" class="formControl" placeholder="Email address" #userEmail required>
-        </div> <!--end of email address field-->
+            <input type="password" class="formControl" placeholder="Password" #userPassword required>
+        </div> 
         <div class="formGroup">
-            <input type="password" class="formControl" autofocus placeholder="Password" #userPassword required>
-        </div> <!--end of password field-->
-        <div class="formGroup">
-            <input type="button" class="btn btnPrimary" value="Log in" (click)="authService.SignIn(userEmail.value, userPassword.value)">
+            <input type="button" class="btn-log-in" value="Log in"
+                (click)="authService.SignIn(userEmail.value, userPassword.value)">
         </div>
-        <div class="formGroup">
-            <span class="or"><span class="orInner">Or</span> </span>
+        <div class="google-container">
+            <div class="formGroup">
+                <span class="or"><span>Or sign up with -></span></span>
+            </div>
+            <div class="formGroup">
+                <button type="button" class="btn" (click)="authService.GoogleAuth()">
+                    <img src="assets\resources\img\google-icon.png">
+                </button>
+            </div>
         </div>
-        <div class="formGroup">
-            <button type="button" class="btn googleBtn" (click)="authService.GoogleAuth()">
-                <i class="fab fa-google-plus-g"></i>
-                Log in with Google
-            </button>
-        </div>
-
-
-        <div class="buttons">
-            <p>Don't have an account.</p>
+        <br>
+        <div class="footer">
+            <p>Don't have an account -></p>
             <a routerLink="/registration-form-component" routerLinkActive="active" ariaCurrentWhenActive="page">
-                Register</a>
+                Register Here</a>
         </div> <!--end of buttons class-->
     </div> <!-- end of container class -->
     <router-outlet></router-outlet>

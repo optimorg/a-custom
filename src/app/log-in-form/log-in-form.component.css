@@ -60,7 +60,7 @@ body {
     margin-bottom: 1rem;
 }
 
-.form__input {
+.formControl {
     display: block;
     width: 100%;
     padding: 0.75rem;
@@ -72,9 +72,9 @@ body {
     transition: background 0.2s, border-color 0.2s;
 }
 
-.form__input:focus {
-    border-color: var(--dark-blue);
-    background-color: var(--bg-color);
+.formControl:focus {
+    border-color: var(--light-blue);
+    background-color: var(--light-blue);
     color: white;
 }
 
@@ -89,7 +89,7 @@ body {
     color: var(--color-error);
 }
 
-.form__button {
+.btn-log-in {
     width: 100%;
     padding: 1rem 2rem;
     font-weight: bold;
@@ -102,6 +102,7 @@ body {
     background: var(--bg-color);
     margin-left: auto;
     margin-right: auto;
+    margin-top: 10px;
     display: block;
     align-items: center;
 }
@@ -130,4 +131,12 @@ body {
 
 p {
     font-family: 'Quicksand';
+}
+
+.google-container{
+    display: flex;
+    align-items: center;
+  }
+.footer{
+    display: flex;
 }

@@ -30,7 +30,8 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatOptionModule } from '@angular/material/core';
 import { MatDialogModule } from '@angular/material/dialog';
-import {MatCardModule} from '@angular/material/card'
+import {MatCardModule} from '@angular/material/card';
+import {MatExpansionModule} from '@angular/material/expansion';
 import { EditOrderComponent } from './edit-order/edit-order.component';
 import { OrderListComponent } from './order-list/order-list.component';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -48,7 +49,8 @@ import { UploadFormComponent } from './upload-form/upload-form.component';
 import { UploadListComponent } from './upload-list/upload-list.component';
 import { UploadDetailsComponent } from './upload-details/upload-details.component';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
-import { AuthService } from './services/auth.service';
+import { AuthService } from './services/auth.service'
+import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';;
 
 @NgModule({
   declarations: [
@@ -89,9 +91,11 @@ import { AuthService } from './services/auth.service';
     MatOptionModule,
     MatDialogModule,
     MatCardModule,
+    MatExpansionModule,
     NgxPaginationModule,
     AngularFireDatabaseModule,
     AngularFireStorageModule,
+    MdbCarouselModule,
     ToastrModule.forRoot(),
     AngularFireModule.initializeApp(environment.firebase),
     provideFirebaseApp(() => initializeApp(environment.firebase)),

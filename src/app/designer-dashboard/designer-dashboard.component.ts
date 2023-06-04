@@ -16,14 +16,6 @@ export class DesignerDashboardComponent {
   
   }
 
-  openOrderDialog(){
-    const dialogConfig = new MatDialogConfig();
-    
-    dialogConfig.disableClose = false;
-    dialogConfig.autoFocus = true;
-
-    this.dialog.open(CustomerFormComponent, dialogConfig)
-  }
   openOrderListDialog(){
     const dialogConfig = new MatDialogConfig();
 
