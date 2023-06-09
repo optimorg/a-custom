@@ -1,31 +1,35 @@
-<div>
+<div class="splash-page">
     <div class="splash-main">
         <div class="top-flex">
-            <img class="images" src="assets/resources/img/Acustom_logo.png" />
+            <div class="logo">
+                <img class="logo-image" src="assets/resources/img/Acustom_logo.png" />
+                <div class="hero-card">
+                    <h1 class="mb-3">Welcome to Acustom!</h1>
+                    <p>Made to help entrepreneurs and their customers "get accustomed" to the consultation experience.
+                        Your
+                        consultation's should be FUN not FUSSY.</p>
+                    <div class="intro-buttons">
+                        <div class="already">
+                            <p>Already have an account?</p>
+                            <a class="link-underline-primary" 
+                            routerLink="/log-in-form-component" 
+                            routerLinkActive="active">Click Here</a>
+                        </div>
+                        <button type="button" class="btn btn-primary" routerLink="/registration-form-component"
+                            routerLinkActive="active">Get Started</button>
+                    </div>
+                </div>
+            </div>
             <div class="splash-collage">
-                <img class="imags" src="assets/resources/img/collage.png" width="800px" />
+                <img class="images" src="assets/resources/img/collage.png" height="600px" />
             </div>
         </div>
-        <div class="hero-card">
-            <h2>Welcome to Acustom!</h2>
-            <p>Made to help entrepreneurs and their customers "get accustomed" to the consultation experience. Your
-                consultation's should be FUN not FUSSY.</p>
-        </div>
-        <div class="intro-buttons">
-            <div class="already">
-                <p>Already have an account?</p>
-                <a class="nav-link" 
-                routerLink="/log-in-form-component" 
-                routerLinkActive="active">Click Here</a>
-            </div>
-            <button type="button" class="btn btn-primary" routerLink="/registration-form-component" 
-            routerLinkActive="active">Get Started</button>
-        </div>
+
     </div>
     <div>
         <section class="features py-6 bg-light-primary">
             <div class="container">
-                <div class="row justify-content-center text-center mb-4">
+                <div class="feature-title row justify-content-center text-center mb-4">
                     <div class="col-xl-6 col-lg-8 col-sm-10">
                         <h2 class="font-weight-bold">What Can Acustom Do For You?</h2>
                     </div>
@@ -38,12 +42,12 @@
                             <div class="card-body">
                                 <div class="text-primary mb-5">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
-                                        fill="var(--light-blue)" class="bi bi-calendar-check-fill" viewBox="0 0 16 16">
+                                        fill="var(--dark-blue)" class="bi bi-calendar-check-fill" viewBox="0 0 16 16">
                                         <path
                                             d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2zm-5.146-5.146-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708z" />
                                     </svg>
                                 </div>
-                                <h6 class="font-weight-bold mb-3">Interactive Calendar</h6>
+                                <h5 class="font-weight-bold mb-3">Interactive Calendar</h5>
                                 <p class="text-muted mb-0">Embed holistics charts directly to your application</p>
                             </div>
                         </div>
@@ -53,14 +57,14 @@
                             <div class="card-body">
                                 <div class="text-primary mb-5">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
-                                        fill="var(--light-blue)" class="bi bi-person-check" viewBox="0 0 16 16">
+                                        fill="var(--dark-blue)" class="bi bi-person-check" viewBox="0 0 16 16">
                                         <path
                                             d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm1.679-4.493-1.335 2.226a.75.75 0 0 1-1.174.144l-.774-.773a.5.5 0 0 1 .708-.708l.547.548 1.17-1.951a.5.5 0 1 1 .858.514ZM11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" />
                                         <path
                                             d="M8.256 14a4.474 4.474 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10c.26 0 .507.009.74.025.226-.341.496-.65.804-.918C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4s1 1 1 1h5.256Z" />
                                     </svg>
                                 </div>
-                                <h6 class="font-weight-bold mb-3">Detailed Profiles</h6>
+                                <h5 class="font-weight-bold mb-3">Detailed Profiles</h5>
                                 <p class="text-muted mb-0">Embed holistics charts directly to your application</p>
                             </div>
                         </div>
@@ -70,13 +74,13 @@
                             <div class="card-body">
                                 <div class="text-primary mb-5">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
-                                        fill="var(--light-blue)" class="bi bi-exclamation-diamond-fill"
+                                        fill="var(--dark-blue)" class="bi bi-exclamation-diamond-fill"
                                         viewBox="0 0 16 16">
                                         <path
                                             d="M9.05.435c-.58-.58-1.52-.58-2.1 0L.436 6.95c-.58.58-.58 1.519 0 2.098l6.516 6.516c.58.58 1.519.58 2.098 0l6.516-6.516c.58-.58.58-1.519 0-2.098L9.05.435zM8 4c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995A.905.905 0 0 1 8 4zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
                                     </svg>
                                 </div>
-                                <h6 class="font-weight-bold mb-3">Intuitive Alerts</h6>
+                                <h5 class="font-weight-bold mb-3">Intuitive Alerts</h5>
                                 <p class="text-muted mb-0">Embed holistics charts directly to your application</p>
                             </div>
                         </div>
@@ -86,12 +90,12 @@
                             <div class="card-body">
                                 <div class="text-primary mb-5">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
-                                        fill="var(--light-blue)" class="bi bi-rulers" viewBox="0 0 16 16">
+                                        fill="var(--dark-blue)" class="bi bi-rulers" viewBox="0 0 16 16">
                                         <path
                                             d="M1 0a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h5v-1H2v-1h4v-1H4v-1h2v-1H2v-1h4V9H4V8h2V7H2V6h4V2h1v4h1V4h1v2h1V2h1v4h1V4h1v2h1V2h1v4h1V1a1 1 0 0 0-1-1H1z" />
                                     </svg>
                                 </div>
-                                <h6 class="font-weight-bold mb-3">Micro Measurements</h6>
+                                <h5 class="font-weight-bold mb-3">Micro Measurements</h5>
                                 <p class="text-muted mb-0">Embed holistics charts directly to your application</p>
                             </div>
                         </div>
@@ -101,12 +105,12 @@
                             <div class="card-body">
                                 <div class="text-primary mb-5">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
-                                        fill="var(--light-blue)" class="bi bi-chat-left-heart-fill" viewBox="0 0 16 16">
+                                        fill="var(--dark-blue)" class="bi bi-chat-left-heart-fill" viewBox="0 0 16 16">
                                         <path
                                             d="M2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2Zm6 3.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z" />
                                     </svg>
                                 </div>
-                                <h6 class="font-weight-bold mb-3">Direct Communication</h6>
+                                <h5 class="font-weight-bold mb-3">Direct Communication</h5>
                                 <p class="text-muted mb-0">Embed holistics charts directly to your application</p>
                             </div>
                         </div>
@@ -116,14 +120,14 @@
                             <div class="card-body">
                                 <div class="text-primary mb-5">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
-                                        fill="var(--light-blue)" class="bi bi-card-checklist" viewBox="0 0 16 16">
+                                        fill="var(--dark-blue)" class="bi bi-card-checklist" viewBox="0 0 16 16">
                                         <path
                                             d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z" />
                                         <path
                                             d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0zM7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z" />
                                     </svg>
                                 </div>
-                                <h6 class="font-weight-bold mb-3">Clear Scheduling</h6>
+                                <h5 class="font-weight-bold mb-3">Clear Scheduling</h5>
                                 <p class="text-muted mb-0">Embed holistics charts directly to your application</p>
                             </div>
                         </div>
