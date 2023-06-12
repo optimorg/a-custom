@@ -16,3 +16,8 @@
 .collapse-box{
     background-color: var(--bg-color);
 }
+
+.order-button{
+    margin-top: 5px;
+    
+}
